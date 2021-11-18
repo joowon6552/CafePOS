@@ -137,6 +137,8 @@ public class Receiptcard {
 		lb_Time.setHorizontalAlignment(SwingConstants.LEFT);
 		lb_Time.setFont(new Font("HY엽서M", Font.BOLD, 12));
 		lb_Time.setBounds(128, 146, 316, 15);
+		lb_Time.setText("" + oCalendar.get(Calendar.YEAR) + "년" + (oCalendar.get(Calendar.MONTH) + 1) + "월" + oCalendar.get(Calendar.DAY_OF_MONTH)
+		 + "일 " + oCalendar.get(Calendar.HOUR_OF_DAY) + "시 " + oCalendar.get(Calendar.MINUTE) + "분");
 		panel.add(lb_Time);
 		
 		lb_Bank = new JLabel("KB국민은행");
